@@ -1,0 +1,82 @@
+[
+	{
+		"title": "The Shawshank Redemption",
+		"description": "A banker wrongly imprisoned forms a lasting friendship and never gives up hope."
+	},
+	{
+		"title": "Inception",
+		"description": "A skilled thief enters people’s dreams to plant an idea, but reality starts to blur."
+	},
+	{
+		"title": "The Godfather",
+		"description": "An aging mafia don passes the reins of his empire to his reluctant son."
+	},
+	{
+		"title": "The Dark Knight",
+		"description": "Batman faces off against the Joker in a battle for Gotham's soul."
+	},
+	{
+		"title": "Forrest Gump",
+		"description": "The extraordinary life journey of a simple man with a kind heart."
+	},
+	{
+		"title": "Interstellar",
+		"description": "A team ventures through a wormhole to find a new home for humanity."
+	},
+	{
+		"title": "Parasite",
+		"description": "A poor family schemes to infiltrate a wealthy household, leading to dark consequences."
+	},
+	{
+		"title": "The Matrix",
+		"description": "A computer hacker discovers a hidden reality controlled by machines."
+	},
+	{
+		"title": "Gladiator",
+		"description": "A betrayed Roman general seeks vengeance as a gladiator."
+	},
+	{
+		"title": "Titanic",
+		"description": "A love story unfolds aboard the ill-fated Titanic."
+	},
+	{
+		"title": "Pulp Fiction",
+		"description": "Interwoven stories of crime and redemption in L.A."
+	},
+	{
+		"title": "Avengers: Endgame",
+		"description": "The Avengers assemble one last time to undo Thanos’s destruction."
+	},
+	{
+		"title": "Spirited Away",
+		"description": "A young girl becomes trapped in a mysterious spirit world."
+	},
+	{
+		"title": "The Silence of the Lambs",
+		"description": "An FBI trainee seeks help from a cannibalistic killer to catch another murderer."
+	},
+	{
+		"title": "La La Land",
+		"description": "An aspiring actress and a jazz musician fall in love while chasing dreams in L.A."
+	},
+	{
+		"title": "Joker",
+		"description": "A failed comedian’s descent into madness sparks a violent revolution."
+	},
+	{
+		"title": "The Lion King",
+		"description": "A lion cub’s journey from exile to reclaim his rightful place as king."
+	},
+	{
+		"title": "Toy Story",
+		"description": "Toys come to life and face change as a new favorite enters the room."
+	},
+	{
+		"title": "Get Out",
+		"description": "A Black man uncovers a disturbing secret when visiting his white girlfriend’s family."
+	},
+	{
+		"title": "The Social Network",
+		"description": "The rise of Facebook and the lawsuits that followed."
+	}
+]

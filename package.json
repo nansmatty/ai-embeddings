@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node -r ts-node/register --env-file=.env src/emb/main.ts",
-		"similarity": "node -r ts-node/register --env-file=.env src/emb/similar.ts"
+		"similarity": "node -r ts-node/register --env-file=.env src/emb/similar.ts",
+		"movie:recommend": "node -r ts-node/register --env-file=.env src/project/movieRecommender.ts"
 	},
 	"keywords": [],
 	"author": "Narayan Maaity",

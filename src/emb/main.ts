@@ -23,7 +23,7 @@ export function loadJSONData<T>(fileName: string): T {
 	return JSON.parse(rawData.toString());
 }
 
-function saveDataToJSONFile(data: any, fileName: string) {
+export function saveDataToJSONFile(data: any, fileName: string) {
 	const dataString = JSON.stringify(data);
 	const dataBuffer = Buffer.from(dataString);
 	const path = join(__dirname, fileName);
@@ -33,7 +33,7 @@ function saveDataToJSONFile(data: any, fileName: string) {
 }
 
 async function main() {
-	const data = loadJSONData<string[]>('data2.json');
+	const data = loadJSONData<string[]>('data.json');
 	const embeddings = await generateEmbeddings(data);
 	const dataWithEmbeddings: DataWithEmbeddings[] = [];
 
@@ -44,7 +44,7 @@ async function main() {
 		});
 	}
 
-	saveDataToJSONFile(dataWithEmbeddings, 'dataWithEmbeddings2.json');
+	saveDataToJSONFile(dataWithEmbeddings, 'dataWithEmbeddings.json');
 }
 
-main();
+// main();
