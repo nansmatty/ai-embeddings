@@ -9,10 +9,8 @@
 	"keywords": [],
 	"author": "Narayan Maaity",
 	"license": "ISC",
-	"type": "commonjs",
 	"dependencies": {
-		"openai": "^5.7.0",
-		"tiktoken": "^1.0.21"
+		"openai": "^5.7.0"
 	},
 	"devDependencies": {
 		"@types/node": "^24.0.3",
