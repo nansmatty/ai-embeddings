@@ -4,12 +4,12 @@ import { join } from 'path';
 
 const openai = new OpenAI();
 
-type DataWithEmbeddings = {
+export type DataWithEmbeddings = {
 	input: string;
 	embeddings: number[];
 };
 
-async function generateEmbeddings(input: string | string[]) {
+export async function generateEmbeddings(input: string | string[]) {
 	const response = await openai.embeddings.create({
 		input,
 		model: 'text-embedding-3-small',
@@ -17,7 +17,7 @@ async function generateEmbeddings(input: string | string[]) {
 	return response;
 }
 
-function loadJSONData<T>(fileName: string): T {
+export function loadJSONData<T>(fileName: string): T {
 	const path = join(__dirname, fileName);
 	const rawData = readFileSync(path);
 	return JSON.parse(rawData.toString());
@@ -33,7 +33,7 @@ function saveDataToJSONFile(data: any, fileName: string) {
 }
 
 async function main() {
-	const data = loadJSONData<string[]>('data.json');
+	const data = loadJSONData<string[]>('data2.json');
 	const embeddings = await generateEmbeddings(data);
 	const dataWithEmbeddings: DataWithEmbeddings[] = [];
 
@@ -44,7 +44,7 @@ async function main() {
 		});
 	}
 
-	saveDataToJSONFile(dataWithEmbeddings, 'dataWithEmbeddings.json');
+	saveDataToJSONFile(dataWithEmbeddings, 'dataWithEmbeddings2.json');
 }
 
 main();
