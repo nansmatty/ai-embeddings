@@ -6,12 +6,15 @@
 	"scripts": {
 		"start": "node -r ts-node/register --env-file=.env src/emb/main.ts",
 		"similarity": "node -r ts-node/register --env-file=.env src/emb/similar.ts",
-		"movie:recommend": "node -r ts-node/register --env-file=.env src/project/movieRecommender.ts"
+		"movie:recommend": "node -r ts-node/register --env-file=.env src/project/movieRecommender.ts",
+		"chroma:client": "node -r ts-node/register --env-file=.env src/chroma/Client.ts"
 	},
 	"keywords": [],
 	"author": "Narayan Maaity",
 	"license": "ISC",
 	"dependencies": {
+		"@chroma-core/default-embed": "^0.1.8",
+		"chromadb": "^3.0.4",
 		"openai": "^5.7.0"
 	},
 	"devDependencies": {
