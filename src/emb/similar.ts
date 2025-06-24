@@ -12,9 +12,9 @@ function cosineSimilarity(a: number[], b: number[]) {
 }
 
 async function main() {
-	const dataWithEmbeddings = loadJSONData<DataWithEmbeddings[]>('dataWithEmbeddings.json');
+	const dataWithEmbeddings = loadJSONData<DataWithEmbeddings[]>('dataWithEmbeddings2.json');
 
-	const input = 'Bear';
+	const input = 'How old is Narayan?';
 
 	const inputEmbeddings = await generateEmbeddings(input);
 
