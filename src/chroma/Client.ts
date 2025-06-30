@@ -1,25 +1,38 @@
 import { ChromaClient } from 'chromadb';
+import { OpenAIEmbeddingFunction } from '@chroma-core/openai';
 
 const client = new ChromaClient({
 	host: 'localhost',
-	port: 8000,
+	port: 5000,
+});
+
+const embedder = new OpenAIEmbeddingFunction({
+	apiKey: process.env.OPENAI_API_KEY!,
+	modelName: 'text-embedding-3-small',
 });
 
 async function main() {
-	const response = await client.createCollection({ name: 'data-test' });
+	await client.createCollection({
+		name: 'data-test',
+	});
 
-	console.log(response);
+	console.log('Collection created successfully');
 }
 
 async function addData() {
 	const collection = await client.getCollection({ name: 'data-test' });
-	const result = await collection.add({
+
+	const texts = ['Here is my entry v2'];
+	const embeddings = await embedder.generate(texts);
+
+	await collection.add({
 		ids: ['id1'],
-		documents: ['Here is my entry'],
-		embeddings: [[0.1, 0.2]],
+		documents: texts,
+		embeddings,
 	});
 
-	console.log(result);
+	console.log('Data inserted successfully: ');
 }
 
-addData();
+// main().catch(console.error);
+addData().catch(console.error);
