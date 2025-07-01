@@ -8,7 +8,8 @@
 		"similarity": "node -r ts-node/register --env-file=.env src/emb/similar.ts",
 		"movie:recommend": "node -r ts-node/register --env-file=.env src/project/movieRecommender.ts",
 		"chroma:client": "node -r ts-node/register --env-file=.env src/chroma/Client.ts",
-		"chroma:chatapp": "node -r ts-node/register --env-file=.env src/chroma/RelevantInfo.ts"
+		"chroma:chatapp": "node -r ts-node/register --env-file=.env src/chroma/RelevantInfo.ts",
+		"pinecone:client": "node -r ts-node/register --env-file=.env src/pinecone/index.ts"
 	},
 	"keywords": [],
 	"author": "Narayan Maaity",
@@ -16,6 +17,7 @@
 	"dependencies": {
 		"@chroma-core/default-embed": "^0.1.8",
 		"@chroma-core/openai": "^0.1.7",
+		"@pinecone-database/pinecone": "^6.1.1",
 		"chromadb": "^3.0.4",
 		"openai": "^5.7.0"
 	},
