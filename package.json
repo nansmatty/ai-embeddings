@@ -9,7 +9,8 @@
 		"movie:recommend": "node -r ts-node/register --env-file=.env src/project/movieRecommender.ts",
 		"chroma:client": "node -r ts-node/register --env-file=.env src/chroma/Client.ts",
 		"chroma:chatapp": "node -r ts-node/register --env-file=.env src/chroma/RelevantInfo.ts",
-		"pinecone:client": "node -r ts-node/register --env-file=.env src/pinecone/index.ts"
+		"pinecone:client": "node -r ts-node/register --env-file=.env src/pinecone/index.ts",
+		"pinecone:chatapp": "node -r ts-node/register --env-file=.env src/pinecone/RelevantInfo.ts"
 	},
 	"keywords": [],
 	"author": "Narayan Maaity",
